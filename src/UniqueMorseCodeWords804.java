@@ -19,14 +19,14 @@ public class UniqueMorseCodeWords804 {
     }
 
     public static int uniqueMorseRepresentations(String[] words) {
-        Set<String> transformations = new HashSet<String>();
-        for (String word : words) {
-            final StringBuilder transformation = new StringBuilder();
-            for(char character : word.toCharArray()){
-                transformation.append(MORSE_ENCODING[character - 'a']);
+        final Set<String> s = new HashSet<String>();
+        for(String w : words) {
+            StringBuilder sb= new StringBuilder();
+            for(char c : w.toCharArray()){
+                sb.append(MORSE_ENCODING[c-'a']);
             }
-         transformations.add(transformation.toString());
+            s.add(sb.toString());
         }
-        return transformations.size();
+        return s.size();
     }
 }
