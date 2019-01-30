@@ -10,9 +10,9 @@ public class NRepeatedElementInSize2NArray961 {
 
 
     public static int repeatedNTimes(int[] A) {
-        Set<Integer> set=new HashSet<>();
-        for(int i=0;i<A.length;i++) {
-            if(set.contains(A[i])) return A[i];
+        Set<Integer> set = new HashSet<>();
+        for (int i = 0; i < A.length; i++) {
+            if (set.contains(A[i])) return A[i];
             set.add(A[i]);
         }
         return -1;
