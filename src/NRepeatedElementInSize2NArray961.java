@@ -1,24 +1,20 @@
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
-import java.util.stream.Collectors;
 
 public class NRepeatedElementInSize2NArray961 {
 
     public static void main(String[] args) {
-        int[] A = {1, 2, 3, 4, 3, 5, 5, 5, 5};
+        int[] A = {5, 1, 5, 2, 5, 3, 5, 4, 1, 1, 1, 1, 1, 23, 1, 1, 1};
         System.out.println(repeatedNTimes(A));
     }
 
 
     public static int repeatedNTimes(int[] A) {
-        for (int i = 0; i < A.length; i++) {
-            for (int j = 1; j <= 3; j++) {
-                if (i + j < A.length && A[i] == A[i + j]) return A[i];
-            }
+        Set<Integer> set=new HashSet<>();
+        for(int i=0;i<A.length;i++) {
+            if(set.contains(A[i])) return A[i];
+            set.add(A[i]);
         }
         return -1;
     }
-
 }
