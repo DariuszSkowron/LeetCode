@@ -3,13 +3,13 @@ public class RobotReturnToOrigin657 {
     public static void main(String[] args) {
 
 
-        String input = "UDLR";
-
+        String input = "UDLRR";
+        System.out.println(judgeCircle(input) ? "ROBOT POSITION IS 0,0!": "ROBOT IS NOT POSITIONED!");
 
     }
 
 
-    public  boolean judgeCircle(String moves) {
+    public static   boolean judgeCircle(String moves) {
         int countHorizontal = 0;
         int countVertical = 0;
         for (int i = 0; i < moves.length(); i++){
@@ -30,5 +30,5 @@ public class RobotReturnToOrigin657 {
             return true;
     }
     return false;
-}
+    }
 }
