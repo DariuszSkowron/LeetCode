@@ -2,7 +2,7 @@ public class HammingDistance461 {
 
     public static void main(String[] args) {
         int x = 1, y = 4;
-        System.out.println(hammingDistance(x,y));
+        System.out.println(hammingDistance(x, y));
 
     }
 
@@ -14,5 +14,25 @@ public class HammingDistance461 {
             if (xBinary.charAt(i) != yBinary.charAt(i)) diffCount++;
         }
         return diffCount;
+
+
     }
+
+//            #SECOND SOLUTION
+//    public static int hammingDistance(int x, int y) {
+//        return Integer.bitCount(x ^ y);
+//    }
+
+
+////    #THIRD SOLUTION
+//public static int hammingDistance(int x, int y) {
+//int xor = x ^ y, count = 0;
+//
+//        while (xor != 0) {
+//        xor &= (xor - 1);
+//        count++;
+//    }
+//        return count;
+//}
+
 }
