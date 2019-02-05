@@ -1,4 +1,7 @@
-public class MergeTwoBinaryTrees {
+public class MergeTwoBinaryTrees617 {
+
+    public static void main(String[] args) {
+    }
 
     public class TreeNode {
         int val;
@@ -8,6 +11,8 @@ public class MergeTwoBinaryTrees {
         TreeNode(int x) {
             val = x;
         }
+
+
     }
 
     class Solution {
