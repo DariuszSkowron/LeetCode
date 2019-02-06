@@ -1,11 +1,12 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class SortArrayByParity905 {
 
     public static void main(String[] args) {
         int[] A = {3,1,2,4, 5};
-        System.out.println(sortArrayByParity(A));
+        System.out.println(Arrays.toString(sortArrayByParity(A)));
     }
 
     public static int[] sortArrayByParity(int[] A) {
