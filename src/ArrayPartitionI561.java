@@ -22,7 +22,7 @@ public class ArrayPartitionI561 {
 }
 
 
-//Shorter solution, you dont need to checking the minumum value beacuse
+//Shorter solution, you dont need to check the minumum value beacuse
 // its already in order so lower position means lower digit
 //    public static int arrayPairSum(int[] nums) {
 //        Arrays.sort(nums);
@@ -33,4 +33,4 @@ public class ArrayPartitionI561 {
 //
 //        return sum;
 //    }
-}
+//}
