@@ -14,3 +14,22 @@ public class KClosestPointsToOrigin973 {
         return Arrays.copyOfRange(points, 0, K);
     }
 }
+
+
+
+
+//    public int[][] kClosest(int[][] points, int K) {
+//        Arrays.sort(points, new PointCompare());
+//        int[][] res = new int[K][2];
+//        for(int i = 0; i < K; i++) res[i] = points[i];
+//        return res;
+//    }
+//}
+//class PointCompare implements Comparator<int[]>{
+//    public int compare(int[] a, int[]b){
+//        int distA = a[0]*a[0] + a[1]*a[1];
+//        int distB = b[0]*b[0] + b[1]*b[1];
+//
+//        return distA < distB ? -1 : 1;
+//    }
+//}
