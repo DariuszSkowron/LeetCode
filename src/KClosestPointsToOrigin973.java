@@ -6,7 +6,7 @@ public class KClosestPointsToOrigin973 {
     public static void main(String[] args) {
         int[][] points = {{1, 3}, {-2, 2}};
         int K = 1;
-        System.out.println(kClosest(points, K));
+        System.out.println(Arrays.deepToString(kClosest(points, K)));
     }
 
     public static int[][] kClosest(int[][] points, int K) {
