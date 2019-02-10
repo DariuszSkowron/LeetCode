@@ -2,7 +2,7 @@ public class FibbonaciNumber509 {
 
     public static void main(String[] args) {
 
-        int N = 40;
+        int N = 7;
 
         System.out.println(fib(N));
     }
