@@ -15,6 +15,7 @@ public class SortArrayByParity905 {
         for (int i = 0; i < A.length; i++) {
             if (A[i] % 2 == 0) {
                 sortedArray.add(A[i]);
+
             }
         }
         for (int y = 0; y < A.length; y++) {
