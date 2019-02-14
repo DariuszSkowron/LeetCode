@@ -1,4 +1,4 @@
-public class ReverseLinkedList {
+public class ReverseLinkedList206 {
 
     public static void main(String[] args) {
 
