@@ -3,10 +3,10 @@ import java.util.List;
 
 public class FindAllAnagramsInAString438 {
 
-    public static void main(String[]args){
+    public static void main(String[] args) {
         String s = "cbaedabacd", p = "abc";
 
-        System.out.println(findAnagrams(s,p));
+        System.out.println(findAnagrams(s, p));
 
     }
 
@@ -18,11 +18,11 @@ public class FindAllAnagramsInAString438 {
         for (char c : p.toCharArray()) {
             hash[c]++;
         }
-        int left =0, right = 0, count = p.length();
-        while (right < s.length()){
-        if (hash[s.charAt(right++)] -->= 1) count --;
-        if (count == 0) result.add(left);
-        if (right - left == p.length() && hash[s.charAt(left++)]++ >= 0) count++;
+        int left = 0, right = 0, count = p.length();
+        while (right < s.length()) {
+            if (hash[s.charAt(right++)]-- >= 1) count--;
+            if (count == 0) result.add(left);
+            if (right - left == p.length() && hash[s.charAt(left++)]++ >= 0) count++;
         }
         return result;
     }
