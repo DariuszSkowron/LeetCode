@@ -24,6 +24,7 @@ public class ValidParentheses20 {
         }
         return stack.isEmpty();
     }
+
 }
 
 //       public static boolean isValid(String s) {
