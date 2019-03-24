@@ -2,7 +2,7 @@ public class ExcelSheetColumnNumber171 {
 
     public static void main(String[] args) {
 
-        String s = "SEA";
+        String s = "AA";
 
         System.out.println(titleToNumber(s));
     }
